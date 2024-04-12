@@ -1,12 +1,6 @@
 github_users:
-  - torvalds
-  - alshedivat
+  - ekimluo
 
 github_repos:
-  - alshedivat/al-folio
-  - twbs/bootstrap
-  - jekyll/jekyll
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - jpswalsh/academicons
-  - mathjax/MathJax
+  - ekimluo/white_male_effect
+  - ekimluo/sleepy_brain

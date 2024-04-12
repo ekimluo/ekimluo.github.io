@@ -1,12 +1,41 @@
 ---
 layout: page
 permalink: /teaching/
-title: teaching
+title: Teaching
 description: Materials for courses you taught. Replace this text with your description.
 nav: true
 nav_order: 6
 ---
+### [Bioinformatics Training Facility](https://www.gen.cam.ac.uk/facilities/bioinformatics-training)
 
-For now, this page is assumed to be a static description of your courses. You can convert it to a collection similar to `_projects/` so that you can have a dedicated page for each course.
+At the Bioinformatics Training Facility, University of Cambridge, I have taught the following courses to diverse cohorts of PhD students and postdoctoral researchers:
 
-Organize your courses by years, topics, or universities, however you like!
+- Core Statistics Using R
+- Introduction to Python
+- Introduction to R for Biologists 
+
+In addition, I have assisted taught these courses:
+- Introduction to Working with UNIX and bash
+- Reproducible Research using R and Git
+- Introduction to Machine Learning
+- Advanced Statistics in R
+- Advanced Statistics in Python
+
+### Thesis Supervision
+In addition to teaching classes, I have mentored and supervised the following undergraduate students (**names of thesis student are in bold**):
+##### University of Cambridge
+Subject: Psychological and Behavioural Science (PBS)
+- Veronica Forslund
+- **Heather Hawkins**
+- **Nikith Thummalapenta**
+- Yihan Yue
+- **Leila Schaaf**
+
+Subject: Clinical Medicine
+- **Jie Lin Li**
+- **Shivika Sharma**
+- **Suveththa Kugan**
+- Kaavya Kanagarajah
+
+Subject: Veterinary Medicine
+- **Meg Sullivan**
