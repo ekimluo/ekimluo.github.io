@@ -1,11 +1,11 @@
 ---
 layout: page
-title: projects
-permalink: /Projects/
-description: A growing collection of your cool projects.
-nav: false
+title: Projects
+permalink: /projects/
+description: Check out some of the projects I've been working on! They may or may not be published. 
+nav: true
 nav_order: 2
-display_categories: [work, fun]
+display_categories: [PhD, Thesis Supervision, Collaboration, Other]
 horizontal: false
 ---
 
