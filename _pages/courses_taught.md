@@ -1,10 +1,9 @@
 ---
 layout: page
-permalink: /teaching/
+permalink: /courses-taught/
 title: Teaching
-description: Materials for courses you taught. Replace this text with your description.
-nav: true
-nav_order: 6
+description: Courses Taught and Thesis Supervision
+nav: false
 ---
 ### [Bioinformatics Training Facility](https://www.gen.cam.ac.uk/facilities/bioinformatics-training)
 

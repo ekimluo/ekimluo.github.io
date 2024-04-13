@@ -1,15 +1,10 @@
 ---
 layout: page
-permalink: /collaborate/
-title: Collaborate
-description: Interested in working with me? Reach out via <a href="mailto:yl756@cam.ac.uk">Email</a>!
-nav: true
-nav_order: 9
+permalink: /information-for-students/
+title: Teaching
+description: Information for Students
+nav: false
 ---
-### Want to collaborate with me?
-
-I am broadly interested in affective experiences related to pain and reward, and I love learning about what others do in this area. Feel free to reach out for a chat!
-
 ### For prospective thesis students
 
 I have mentored thesis students from medical sciences as well as psychology, and they have had a diverse background in terms of research skills. You are welcome to reach out with specific questions. If you are a medic or Natural Sciences Tripos student, simply sign up to thesis projects the same way that psychology students do. You don't need necessary statistical training prior to arriving at the lab; you are welcome to either attend one of my lectures at the Bioinformatics Training Facility or, if the timing doesn't work out, come to my statistical analysis workshop before you start analyzing data. Last year, I provided the following training to all thesis students and research assistants:

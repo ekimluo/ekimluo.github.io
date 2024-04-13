@@ -33,6 +33,14 @@
       "highlights": ["Introduction to R and Tidyverse", "Core Statistics", "Introduction to Python", "Introduction to Working with UNIX and Bash", "Reproducible Research Using R and Git", "Introduction to Machine Learning"]
     },
     {
+      "name": "The Productivity Institute, University of Manchester",
+      "position": "Postdoctoral Research Assistant",
+      "url": "https://www.productivity.ac.uk/",
+      "startDate": "2023",
+      "endDate": "2023",
+      "summary": "Examined the psychological factors that predicted productivity gaps in the UK."
+    },
+    {
       "name": "Social Cognitive and Affective Neuroscience Unit (SCAN-Unit)",
       "position": "Visiting Research Fellow",
       "url": "https://scan-psy.univie.ac.at/",
@@ -64,8 +72,6 @@
       "studyType": "Doctor of Philosophy (Ph.D.)",
       "startDate": "2020",
       "endDate": "2024"
-      // "score": "10",
-      // "courses": ["Theory of Relativity"]
     },
     {
       "institution": "University of Southern California",

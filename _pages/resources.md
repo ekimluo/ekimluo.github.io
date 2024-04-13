@@ -1,27 +1,190 @@
 ---
-layout: page
+layout: default
 permalink: /resources/
 title: Resources
-description: Here are some random resources that I found useful in doing research. Everyone's got a way of doing it; here's mine!
 nav: true
-nav_order: 10
+nav_order: 6
+pagination:
+  enabled: true
+  collection: posts
+  permalink: /page/:num/
+  per_page: 5
+  sort_field: date
+  sort_reverse: true
+  trail:
+    before: 1 # The number of links before the current page
+    after: 3 # The number of links after the current page
 ---
-### A word on coding, if you're new to it
 
-If you are just getting started with code, don't worry about not knowing all the terminology right off the bat. However, learning some basic computer science concepts can save you a lot of time down the road. Python and R are fairly straightforward and easy to get started with because they are relatively high-level, meaning the code is more readable and understandable to humans. There is no need to learn more than one programming language in conducting statistical analysis - if you are just starting out, what's important is that you understand statistical concepts and know the theory behind why we run the tests we run, and what the results mean. I personally think it's much better to develop your expertise in one language rather than trying to be a generalist, given that your goal is to train in statistics and want to use programming languages as a tool to implement statistical tests and models. If your goal is to become a programmer rather than a researcher, that's a different story. That said, it's entirely common to learn and use multiple languages on a daily basis as a researcher. In my day-to-day, I use R, Python and bash for research-related tasks, but I also tinker with miscellaneous code in other languages to build random things that accommodate my work life while not at all being proficient in any of these languages. None of this is as impressive as it sounds. My admiration still goes to researchers who have mastered one language really well and can use whatever tools at their disposal most efficiently to execute scientific ideas.
+<div class="post">
 
-Finally, I will say that one great decision in my PhD is switching to Linux. Well, sometimes it was a terrible decision, like when I accidentally and permanently deleted key libraries that supported my Graphic User Interface (GUI) and I had to fix it while having no idea what I was really doing. However, my Linux skills came in handy when our lab's stimulus computer broke down, and because it also ran on Linux, I felt comfortable diagnosing the problem and attempting to fix it without IT support, which saved me some valuable data collection time. If you don't have a computer science background like I don't, it is a risk, but I still highly recommend it if you are feeling adventurous and love to code. Managing research tasks, data files and computing environments is so much easier using the command line interface. And if you care about aesthetic components (because I agree that command line isn't pretty without GUI components), you can try out other command line interfaces like Guake. Just make sure you do your research beforehand and take steps to minimize the risk of breaking your computer, like testing out a virtual Linux environment first and checking out reviews on the compatibility between your computer and various Linux distributions. Linux Mint is a starter-friendly distribution, especially if you know how to use a Macbook; you probably don't want to start with Arch. I use the pumpkin spice variety of Ubuntu, and I think it is especially great since I'm not a computer scientist and mostly code to do small tasks. 
+{% assign blog_name_size = site.blog_name | size %}
+{% assign blog_description_size = site.blog_description | size %}
 
-A lot of people use statistical analysis software like SPSS, STATA, MatLab or JASP. That's perfectly fine. They are beginner-friendly and intuitive to use. There are many researchers in our field who strongly advocate for using open-source packages and languages, and they have exhausted in listing all the great reasons for doing so: other people can see your code and replicate what you've done; it advances open and transparent science; it facilitates efficient collaboration because your collaborators don't need to sift through your lab book or procedural documentation to understand what you have done; you gain a better understanding of how all linear models are related in writing code, and you can do more advanced equations that simpler software may not be able to accommodate. I agree with all of these reasons that other researchers have listed, although I recognize that learning to code when you have no experience before can be a tough learning curve. More importantly, I think coding can be especially daunting if you come from an underrepresented background. There's no point in pretending that learning how to code is equally accessible to everyone. I never expected that I would learn to code or even teach it at a graduate level myself. So instead of reiterating all the reasons why learning open-source languages is great, I will list the reasons why they benefit you, not just the larger scientific community:
+{% if blog_name_size > 0 or blog_description_size > 0 %}
 
-1. Anyone can learn how to code. OK, not everyone can be great at coding, and you might try it and hate it, but you might end up loving it and realize you are great at it. 
-2. If you love having control over your research, learning to code is the way to go. You will be able to customize your research workflow and every aspect of your data pipeline.
-3. Coding skills are easily translatable. If you learned Python, you can easily pick up other object-oriented languages. If you know R, other functional languages can't be too hard for you. 
-4. This is a neat one - you can use Jupyter Notebooks and R Markdowns as a lab book. This is true whether you are an experimental or a computational scientist. You can document what you've done from start to finish and send your lab book to your lab mates, supervisor or collaborators so that everyone has the chance to gain a good understanding of exactly what you've found and how. 
-5. If you learn how to code an experiment yourself, you don't need to rely on admin or university license for data collection. This is somewhat specific to experimentalists, I agree, but in my PhD it has made a pretty big difference. It has saved me loads of time and allowed me to be more independent in building my experimental tasks.
+  <div class="header-bar">
+    <h1>{{ site.blog_name }}</h1>
+    <h2>{{ site.blog_description }}</h2>
+  </div>
+  {% endif %}
 
-### Productivity Tools
-- [Obsidian](https://obsidian.md/). Life-changing note-taking software. Actually wrote my PhD thesis in this, though there were some drawbacks like formatting issues (and having to tinker with CSS, not fun). Overall for thesis writing, I would say 5/10. For general note-taking, 11/10.
-- [Zotero](https://www.zotero.org/). Stay organized on your literature review! 
-- Google sheets. This is a no-brainer. I attach scripts to my sheets. For example, my planner uses a combination of Google functions and scripts, which allows me to calculate, predict and visualize my workload for each project. It requires some tinkering, but even for a JavaScript newbie like me, I can still cobble together something that works. Try [this spreadsheet planner](https://docs.google.com/spreadsheets/d/1ITJjKecpX3l_cGzcWXZHVgF_RgODKm-kmM469jz0aUs/edit?usp=sharing) out if you want a reference point (it's got a gantt chart and everything). Feel free to make a copy and tinker with the Apps Scripts!
-- Visual Studio Code. Another no-brainer. Even though we usually teach programming using R Studio and Jupyter notebooks, I typically encourage students to use Visual Studio Code for their projects. It's a bit more complicated to set up, but it's worth it in the long run.
+{% if site.display_tags or site.display_categories %}
+
+  <div class="tag-category-list">
+    <ul class="p-0 m-0">
+      {% for tag in site.display_tags %}
+        <li>
+          <i class="fa-solid fa-hashtag fa-sm"></i> <a href="{{ tag | slugify | prepend: '/blog/tag/' | relative_url }}">{{ tag }}</a>
+        </li>
+        {% unless forloop.last %}
+          <p>&bull;</p>
+        {% endunless %}
+      {% endfor %}
+      {% if site.display_categories.size > 0 and site.display_tags.size > 0 %}
+        <p>&bull;</p>
+      {% endif %}
+      {% for category in site.display_categories %}
+        <li>
+          <i class="fa-solid fa-tag fa-sm"></i> <a href="{{ category | slugify | prepend: '/blog/category/' | relative_url }}">{{ category }}</a>
+        </li>
+        {% unless forloop.last %}
+          <p>&bull;</p>
+        {% endunless %}
+      {% endfor %}
+    </ul>
+  </div>
+  {% endif %}
+
+{% assign featured_posts = site.posts | where: "featured", "true" %}
+{% if featured_posts.size > 0 %}
+<br>
+
+<div class="container featured-posts">
+{% assign is_even = featured_posts.size | modulo: 2 %}
+<div class="row row-cols-{% if featured_posts.size <= 2 or is_even == 0 %}2{% else %}3{% endif %}">
+{% for post in featured_posts %}
+<div class="card-item col">
+<a href="{{ post.url | relative_url }}">
+<div class="card hoverable">
+<div class="row g-0">
+<div class="col-md-12">
+<div class="card-body">
+<div class="float-right">
+<i class="fa-solid fa-thumbtack fa-xs"></i>
+</div>
+<h3 class="card-title text-lowercase">{{ post.title }}</h3>
+<p class="card-text">{{ post.description }}</p>
+
+                    {% if post.external_source == blank %}
+                      {% assign read_time = post.content | number_of_words | divided_by: 180 | plus: 1 %}
+                    {% else %}
+                      {% assign read_time = post.feed_content | strip_html | number_of_words | divided_by: 180 | plus: 1 %}
+                    {% endif %}
+                    {% assign year = post.date | date: "%Y" %}
+
+                    <p class="post-meta">
+                      {{ read_time }} min read &nbsp; &middot; &nbsp;
+                      <a href="{{ year | prepend: '/blog/' | prepend: site.baseurl}}">
+                        <i class="fa-solid fa-calendar fa-sm"></i> {{ year }} </a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      {% endfor %}
+      </div>
+    </div>
+    <hr>
+
+{% endif %}
+
+  <ul class="post-list">
+
+    {% if page.pagination.enabled %}
+      {% assign postlist = paginator.posts %}
+    {% else %}
+      {% assign postlist = site.posts %}
+    {% endif %}
+
+    {% for post in postlist %}
+
+    {% if post.external_source == blank %}
+      {% assign read_time = post.content | number_of_words | divided_by: 180 | plus: 1 %}
+    {% else %}
+      {% assign read_time = post.feed_content | strip_html | number_of_words | divided_by: 180 | plus: 1 %}
+    {% endif %}
+    {% assign year = post.date | date: "%Y" %}
+    {% assign tags = post.tags | join: "" %}
+    {% assign categories = post.categories | join: "" %}
+
+    <li>
+
+{% if post.thumbnail %}
+
+<div class="row">
+          <div class="col-sm-9">
+{% endif %}
+        <h3>
+        {% if post.redirect == blank %}
+          <a class="post-title" href="{{ post.url | relative_url }}">{{ post.title }}</a>
+        {% elsif post.redirect contains '://' %}
+          <a class="post-title" href="{{ post.redirect }}" target="_blank">{{ post.title }}</a>
+          <svg width="2rem" height="2rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+            <path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+        {% else %}
+          <a class="post-title" href="{{ post.redirect | relative_url }}">{{ post.title }}</a>
+        {% endif %}
+      </h3>
+      <p>{{ post.description }}</p>
+      <p class="post-meta">
+        {{ read_time }} min read &nbsp; &middot; &nbsp;
+        {{ post.date | date: '%B %d, %Y' }}
+        {% if post.external_source %}
+        &nbsp; &middot; &nbsp; {{ post.external_source }}
+        {% endif %}
+      </p>
+      <p class="post-tags">
+        <a href="{{ year | prepend: '/blog/' | prepend: site.baseurl}}">
+          <i class="fa-solid fa-calendar fa-sm"></i> {{ year }} </a>
+
+          {% if tags != "" %}
+          &nbsp; &middot; &nbsp;
+            {% for tag in post.tags %}
+            <a href="{{ tag | slugify | prepend: '/blog/tag/' | prepend: site.baseurl}}">
+              <i class="fa-solid fa-hashtag fa-sm"></i> {{ tag }}</a> &nbsp;
+              {% endfor %}
+          {% endif %}
+
+          {% if categories != "" %}
+          &nbsp; &middot; &nbsp;
+            {% for category in post.categories %}
+            <a href="{{ category | slugify | prepend: '/blog/category/' | prepend: site.baseurl}}">
+              <i class="fa-solid fa-tag fa-sm"></i> {{ category }}</a> &nbsp;
+              {% endfor %}
+          {% endif %}
+    </p>
+
+{% if post.thumbnail %}
+
+</div>
+
+  <div class="col-sm-3">
+    <img class="card-img" src="{{post.thumbnail | relative_url}}" style="object-fit: cover; height: 90%" alt="image">
+  </div>
+</div>
+{% endif %}
+    </li>
+
+    {% endfor %}
+
+  </ul>
+
+{% if page.pagination.enabled %}
+{% include pagination.liquid %}
+{% endif %}
+
+</div>
