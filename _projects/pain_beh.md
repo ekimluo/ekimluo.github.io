@@ -1,8 +1,8 @@
 ---
 layout: page
 title: Power and Empathy for Pain
-description: Manuscript under preparation!
-img: assets/img/pain_beh_s2lm.jpg
+description: Is there a relationship between power and empathy for pain?
+img: assets/img/pain_beh_s2lm.png
 importance: 1
 category: PhD
 related_publications: true

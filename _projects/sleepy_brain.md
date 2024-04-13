@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Classification of Sex and Age Groups from Resting-State Functional Data Using ML
-description: This was a tiny project produced as a part of a Machine Learning program using "toy data".
+description: Can we classify sex and age based on rs-fMRI?
 img: assets/img/sleepy_fmri_age_full_corr.png
 importance: 2
 category: Other
