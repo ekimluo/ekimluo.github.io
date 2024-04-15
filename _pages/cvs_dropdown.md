@@ -1,6 +1,6 @@
 ---
 layout: page
-title: CVs
+title: 📎CVs
 nav: true
 nav_order: 7
 dropdown: true
