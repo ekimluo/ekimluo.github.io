@@ -1,8 +1,8 @@
 ---
 layout: page
 permalink: /publications/
-title: 📚Publications
-description: 
+title: Publications
+description: 📚Check out some existing pubs!
 nav: true
 nav_order: 3
 ---

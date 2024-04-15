@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 🗣️Teaching
+title: Teaching
 nav: true
 nav_order: 5
 dropdown: true

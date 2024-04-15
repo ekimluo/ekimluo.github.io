@@ -1,7 +1,7 @@
 ---
 layout: default
 permalink: /resources/
-title: 🌱Resources
+title: Resources
 nav: true
 nav_order: 6
 pagination:

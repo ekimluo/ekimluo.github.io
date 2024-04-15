@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /courses-taught/
-title: Teaching
+title: 🌱Teaching
 description: Courses Taught and Thesis Supervision
 nav: false
 ---

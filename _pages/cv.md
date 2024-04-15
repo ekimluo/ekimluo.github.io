@@ -1,7 +1,7 @@
 ---
 layout: cv
 permalink: /cv/
-title: CV
+title: Curriculum Vitae
 nav: false
 cv_pdf: CV_EL.pdf
 description:

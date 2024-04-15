@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /information-for-students/
-title: Teaching
+title: 🌱Teaching
 description: Information for Students
 nav: false
 ---

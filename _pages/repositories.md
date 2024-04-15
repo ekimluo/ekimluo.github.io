@@ -1,8 +1,8 @@
 ---
 layout: page
 permalink: /repositories/
-title: 🛠Repositories
-description:
+title: Repositories
+description: 🛠Check out some public repos!
 nav: true
 nav_order: 4
 ---
