@@ -4,7 +4,7 @@ title: General-Purpose Reliable Automation for Preprocessing EEG (GRAPE)
 description: Can we automate some aspects of EEG preprocessing?
 img: assets/img/grape.gif
 importance: 1
-category: Other
+category: Side Projects
 related_publications:
 ---
 ### What we did

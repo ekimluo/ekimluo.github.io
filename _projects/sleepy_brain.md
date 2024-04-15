@@ -4,7 +4,7 @@ title: Classification of Sex and Age Groups from Resting-State Functional Data U
 description: Can we classify sex and age based on rs-fMRI?
 img: assets/img/sleepy_fmri_age_full_corr.png
 importance: 2
-category: Other
+category: Side Projects
 related_publications:
 ---
 ### What we wanted to know

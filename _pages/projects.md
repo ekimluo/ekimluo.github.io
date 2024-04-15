@@ -5,7 +5,7 @@ permalink: /projects/
 description: Check out some of the projects I've been working on! They may or may not be published. 
 nav: true
 nav_order: 2
-display_categories: [PhD, Thesis Supervision, Collaboration, Other]
+display_categories: [PhD, Side Projects]
 horizontal: false
 ---
 

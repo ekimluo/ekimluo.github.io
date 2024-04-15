@@ -283,7 +283,7 @@ jekyll-archives:
     category: "/blog/category/:name/"
 
 display_tags: ["coding","productivity"] # these tags will be displayed on the front page of your blog
-display_categories: ["tips", "recipes"] # these categories will be displayed on the front page of your blog
+display_categories: ["tips", "recipes", "tutorials"] # these categories will be displayed on the front page of your blog
 
 # -----------------------------------------------------------------------------
 # Jekyll Scholar

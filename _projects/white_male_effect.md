@@ -4,7 +4,7 @@ title: White Male Effect in COVID-19 Mortality Risk Perceptions
 description: Is there a systematic difference in how demographic groups perceive COVID-19 risks?
 img: assets/img/white_male_effect.png
 importance: 3
-category: Other
+category: Side Projects
 related_publications:
 ---
 ### What we wanted to know
